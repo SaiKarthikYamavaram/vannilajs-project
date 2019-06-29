@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>personal expense </title>
+    <style>
+    body{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="totalExpense"></h1><br> <br/>
+    <input id="userInput" type="text"  placeholder="enter value to be added">
+    <button id="noOfitems">+  </button>
+    <script>
+    let doc =document.querySelector("#noOfitems");
+    const disp = document.querySelector("#totalExpense")
+    let noOfitems=0;
+    disp.textContent = noOfitems;
+    
+    doc.addEventListener('click',increment,false);
+    
+    function increment(){
+    
+    const newlyadded = document.querySelector("#userInput").value;
+    noOfitems+= parseInt(newlyadded,10);
+    console.log(noOfitems);
+    disp.textContent = noOfitems;
+     }   
+    </script>
+</body>
+</html>
