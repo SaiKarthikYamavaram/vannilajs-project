@@ -1,1 +1,1 @@
-A simple Expense App Made out of Vennila JS
+A simple Expense App Made out of Vannila JS
