@@ -1,2 +1,1 @@
-# vannilajs-project
-# vannilajs-project
+A simple Expense App Made out of Vennila JS
